@@ -57,7 +57,7 @@ const App = () => {
     // on the basis of that response we are displaying the payment successfull or failed message at the backend
   };
 
-  const fetchRes = async () => {
+  const startPayment = async () => {
     let bodyData = new FormData();
 
     // we will pass the amount and product name to the backend using form data
@@ -119,7 +119,7 @@ const App = () => {
           />
         </div>
       </form>
-      <button onClick={fetchRes} className="btn btn-primary btn-block">
+      <button onClick={startPayment} className="btn btn-primary btn-block">
         Pay with PayTm
       </button>
     </div>
